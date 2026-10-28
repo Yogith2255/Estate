@@ -1,0 +1,51 @@
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-xs);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge-pill--sm {
+  padding: 2px 6px;
+  font-size: 10px;
+}
+
+.badge-pill--md {
+  padding: 3px 7px;
+  font-size: var(--font-size-xs);
+}
+
+.badge-pill--primary {
+  background-color: var(--color-primary-blue-light);
+  color: var(--color-primary-blue);
+  border: 1px solid #BAE6FD;
+}
+
+.badge-pill--neutral {
+  background-color: var(--color-neutral-status-bg);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}
+
+.badge-pill--success {
+  background-color: var(--color-success-bg);
+  color: var(--color-success);
+  border: 1px solid var(--color-success-border);
+}
+
+.badge-pill--warning {
+  background-color: var(--color-warning-bg);
+  color: var(--color-warning);
+  border: 1px solid var(--color-warning-border);
+}
+
+.badge-pill--outline {
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}

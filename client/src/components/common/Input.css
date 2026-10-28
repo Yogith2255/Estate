@@ -1,0 +1,96 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xs);
+  width: 100%;
+}
+
+.input-field__label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.input-field__required {
+  color: var(--color-danger);
+  margin-left: 2px;
+}
+
+.input-field__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-field__input {
+  width: 100%;
+  height: 34px;
+  padding: 6px 10px;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  background-color: var(--color-panel-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.input-field__input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.input-field__input:hover {
+  border-color: var(--color-border-dark);
+}
+
+.input-field__input:focus {
+  border-color: var(--color-primary-blue);
+  box-shadow: 0 0 0 2px var(--color-primary-blue-light);
+}
+
+/* Icon positioning */
+.input-field__icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  pointer-events: none;
+}
+
+.input-field__icon--left {
+  left: 10px;
+}
+
+.input-field__icon--right {
+  right: 10px;
+}
+
+.input-field__wrapper--has-icon-left .input-field__input {
+  padding-left: 32px;
+}
+
+.input-field__wrapper--has-icon-right .input-field__input {
+  padding-right: 32px;
+}
+
+/* Error state */
+.input-field--error .input-field__input {
+  border-color: var(--color-danger);
+}
+
+.input-field--error .input-field__input:focus {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 2px var(--color-danger-bg);
+}
+
+.input-field__error-text {
+  font-size: var(--font-size-2xs);
+  color: var(--color-danger);
+}
+
+.input-field__helper-text {
+  font-size: var(--font-size-2xs);
+  color: var(--color-text-secondary);
+}

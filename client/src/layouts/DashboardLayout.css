@@ -1,0 +1,26 @@
+.enterprise-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-workspace-bg); /* #F5F7FA */
+}
+
+.enterprise-layout__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: var(--color-workspace-bg);
+}
+
+.enterprise-layout__workspace {
+  flex: 1;
+  padding: 16px 20px;
+  background-color: var(--color-workspace-bg); /* #F5F7FA */
+  overflow-y: auto;
+}
+
+@media (max-width: 640px) {
+  .enterprise-layout__workspace {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,5 @@
+/* EstateHub Core Design System */
+@import './styles/variables.css';
+@import './styles/reset.css';
+@import './styles/typography.css';
+@import './styles/utilities.css';

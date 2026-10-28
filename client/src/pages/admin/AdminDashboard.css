@@ -1,0 +1,87 @@
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-dashboard__kpis {
+  margin-bottom: var(--spacing-md);
+}
+
+.admin-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-panel__header {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-panel-muted);
+}
+
+.admin-panel__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.admin-panel__link {
+  font-size: 11px;
+  color: var(--color-primary-blue);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: var(--font-weight-medium);
+}
+
+.admin-panel__link:hover {
+  text-decoration: underline;
+}
+
+.admin-panel__body {
+  padding: 12px;
+}
+
+.admin-audit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-audit-card {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-panel-bg);
+  border-radius: var(--radius-xs);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-audit-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-audit-card__event {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.admin-audit-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.admin-audit-card__time {
+  font-size: 10px;
+}

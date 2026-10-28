@@ -1,0 +1,106 @@
+.projects-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-page__kpis {
+  margin-bottom: var(--spacing-md);
+}
+
+.project-table__name {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-xs);
+}
+
+.project-table__sub {
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+.project-table__price {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.text-primary {
+  color: var(--color-primary-blue);
+}
+
+/* Card Mode */
+.project-card {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-card__id {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-semibold);
+}
+
+.project-card__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.project-card__location {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.project-card__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid var(--color-border);
+  padding-top: 8px;
+  margin-top: 4px;
+}
+
+.project-card__meta-label {
+  font-size: 10px;
+  color: var(--color-text-muted);
+  display: block;
+  text-transform: uppercase;
+}
+
+.project-card__meta-val {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+}
+
+.view-mode-toggle {
+  display: flex;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+}
+
+.view-mode-btn {
+  background: var(--color-panel-bg);
+  border: none;
+  padding: 5px 8px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.view-mode-btn--active {
+  background: var(--color-primary-blue);
+  color: #FFFFFF;
+}

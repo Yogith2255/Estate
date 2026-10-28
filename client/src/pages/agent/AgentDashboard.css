@@ -1,0 +1,153 @@
+.agent-dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-dashboard__kpis {
+  margin-bottom: var(--spacing-md);
+}
+
+.agent-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-panel__header {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-panel-muted);
+}
+
+.agent-panel__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.agent-panel__link {
+  font-size: 11px;
+  color: var(--color-primary-blue);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: var(--font-weight-medium);
+}
+
+.agent-panel__link:hover {
+  text-decoration: underline;
+}
+
+.agent-panel__body {
+  padding: 12px;
+}
+
+.agent-visit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.agent-visit-card {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-panel-bg);
+  border-radius: var(--radius-xs);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.agent-visit-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.agent-visit-card__name {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.agent-visit-card__project {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.agent-visit-card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+  border-top: 1px dashed var(--color-border);
+  padding-top: 6px;
+}
+
+.agent-visit-card__contact {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.agent-visit-card__date {
+  font-size: 10px;
+  color: var(--color-primary-blue);
+  font-weight: var(--font-weight-semibold);
+}
+
+.agent-listings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.agent-listing-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  padding: 8px 10px;
+}
+
+.agent-listing-row__img {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-xs);
+  object-fit: cover;
+}
+
+.agent-listing-row__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.agent-listing-row__title {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.agent-listing-row__addr {
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+.agent-listing-row__price {
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary-blue);
+}
